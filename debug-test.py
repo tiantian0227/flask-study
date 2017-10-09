@@ -1,5 +1,5 @@
 # encoding:utf-8
-from flask import Flask, url_for, redirect
+from template01 import Flask, url_for, redirect
 import config
 
 app = Flask(__name__)

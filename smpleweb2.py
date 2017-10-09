@@ -1,6 +1,6 @@
 # encoding:utf-8
-from flask import Flask
-from flask import request
+from template01 import Flask
+from template01 import request
 # 初始化一个Flask对象
 # Flask()
 # 需要传递一个参数__name__
