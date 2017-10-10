@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{#    {% for k,v in user1.items() %}#}
+{#        <p>{{ k }}:{{ v }} <p/>#}
+{#    {% endfor %}#}
+{#    {% for website in websites %}#}
+{#        <p>{{ website }} <p/>#}
+{#    {% endfor %}#}
+<table>
+    <thead>
+{#  <th>定义表格内的表头单元格。此th元素内部的文本通常会呈现为粗体。#}
+        <th>书名</th>
+        <th>作者</th>
+        <th>价格</th>
+    </thead>
+    <tbody>
+        {% for book in books %}
+{#   每个表格均有若干行（由 <tr> 标签定义），每行被分割为若干单元格（由 <td> 标签定义）#}
+            <tr>
+                <td>{{ book.name }}</td>
+                <td>{{ book.autor }}</td>
+                <td>{{ book.price }}</td>
+            </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+
+
+</body>
+</html>
