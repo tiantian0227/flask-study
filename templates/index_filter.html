@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过滤器</title>
+</head>
+<body>
+<img src="{{ avatar|default('https://static.baiwandian.cn/xinyunlian-admin/static/upload/image//201607/0bdd7098-eea3-4b18-95fa-763161460ba7.jpg')}}" alt="">
+
+<hr>
+<p>评论数：({{ comments|length }})</p>
+<ul>
+    {% for comment in comments %}
+        <li>
+            <a href="#">{{ comment.user }}</a>
+            <p>{{ comment.comment }}</p>
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

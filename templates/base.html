@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+    <style>
+{# 设置nav类的样式#}
+        .nav{
+            background: #3a3a3a;
+            height: 65px;
+        }
+{#去除浮动#}
+        ul{
+            overflow: hidden;
+        }
+{#float表示向左浮动，比如多个div在一个页面上，默认情况是：一行一个div，但是只要在div的css中使用float：left，可以使一行有多个div#}
+        ul li{
+            float: left;
+            list-style: none;
+            padding: 0 10px;
+            line-height: 65px;
+        }
+{#修改<a>标签中文字颜色#}
+        ul li a{
+            color: #ffffff;
+        }
+    </style>
+{% block head %}
+
+{% endblock %}
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">发布问答</a></li>
+    </ul>
+</div>
+{% block main %}
+
+{% endblock %}
+</body>
+</html>

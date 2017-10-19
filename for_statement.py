@@ -51,7 +51,7 @@ def index():
             'price': 140
         }
     ]
-    return render_template('index_for.html',books=books)
+    return render_template('index_for.html', books=books)
 
 if __name__ == '__main__':
     app.run(debug=True)
